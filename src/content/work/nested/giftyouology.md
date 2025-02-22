@@ -8,6 +8,7 @@ description: |
 tags:
   - E-Commerce
   - Full Stack
+  - React
   - NextJs
 ---
 

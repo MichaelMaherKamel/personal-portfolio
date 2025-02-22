@@ -18,7 +18,9 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						With a background rooted in Mechatronics Engineering, I have evolved into a passionate self-taught web developer driven by an insatiable curiosity and love for cloud computing. The journey of transitioning from the world of Mechatronics to the realm of web development has been both challenging and rewarding. Currently serving as the Team Leader for Microsoft365 Cloud Support, I bring a wealth of experience and expertise in cloud technologies to the table. Despite my success in the cloud support domain, my heart lies in web development, and I am on the cusp of launching my professional career in this dynamic field. Armed with a robust skill set and a fervent desire to create innovative solutions, I am eagerly anticipating diving into exciting web development projects that will further showcase my capabilities and passion for the craft.
+						With a background in Mechatronics Engineering, I have transitioned into a Cloud Solutions Architect and Full Stack Developer, driven by a deep passion for cloud computing and web technologies. My journey from engineering to cloud and software development has been both challenging and rewarding, allowing me to cultivate a versatile skill set.
+						Currently serving as a Cloud Solution Architect at Sonata Software, I specialize in designing and implementing Microsoft 365 and Azure solutions, optimizing cloud environments for efficiency, security, and scalability. While my expertise in cloud architecture continues to grow, my passion for web development remains strong, fueling my commitment to building innovative and high-performance applications.
+						With a blend of cloud expertise and full-stack development skills, I am eager to contribute to projects that push the boundaries of modern technology.
 					</p>
 					
 				</div>
@@ -33,7 +35,58 @@ import Hero from '../components/Hero.astro';
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>Proficient in Full Stack development using JavaScript/TypeScript, my expertise spans across various technologies, including Next.js, React, and Node.js. I have hands-on experience with databases such as MySQL and MongoDB, and I'm well-versed in utilizing Drizzle ORM for efficient data management. Additionally, my proficiency extends to tRPC for seamless communication between the Front-End and Back-End components of web applications.</p>
+					<ul class="skills-list">
+						<li class="skill-category">
+							<h3>Cloud Computing</h3>
+							<ul class="skills">
+								<li>Microsoft 365</li>
+								<li>Azure</li>
+								<li>Hybrid Cloud Solutions</li>
+							</ul>
+						</li>
+						<li class="skill-category">
+							<h3>Full Stack Development</h3>
+							<ul class="skills">
+								<li>JavaScript</li>
+								<li>TypeScript</li>
+								<li>React</li>
+								<li>Next.js</li>
+								<li>Node.js</li>
+								<li>SolidJS</li>
+								<li>Solid Start</li>
+							</ul>
+						</li>
+						<li class="skill-category">
+							<h3>Databases</h3>
+							<ul class="skills">
+								<li>PostgreSQL</li>
+								<li>MySQL</li>
+								<li>SQLite</li>
+							</ul>
+						</li>
+						<li class="skill-category">
+							<h3>Backend & APIs</h3>
+							<ul class="skills">
+								<li>Server-side rendering (SSR)</li>
+								<li>RESTful APIs</li>
+							</ul>
+						</li>
+						<li class="skill-category">
+							<h3>UI/UX & Performance</h3>
+							<ul class="skills">
+								<li>Tailwind CSS</li>
+								<li>Optimized Frontend Architecture</li>
+							</ul>
+						</li>
+						<li class="skill-category">
+							<h3>DevOps & Deployment</h3>
+							<ul class="skills">
+								<li>Vercel</li>
+								<li>GitHub Actions</li>
+								<li>CI/CD Pipelines</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</main>
@@ -81,6 +134,38 @@ import Hero from '../components/Hero.astro';
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	/* Skills list styling */
+	.skills-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.skill-category {
+		margin-bottom: 1.5rem;
+	}
+
+	.skill-category h3 {
+		font-size: var(--text-md);
+		color: var(--gray-0);
+		margin-bottom: 0.5rem;
+	}
+
+	.skills {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		list-style: none;
+		padding: 0;
+	}
+
+	.skills li {
+		background-color: var(--gray-800, #2a2a2a);
+		padding: 0.3rem 0.8rem;
+		border-radius: 2rem;
+		font-size: var(--text-sm);
 	}
 
 	@media (min-width: 50em) {
